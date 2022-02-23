@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <title style="display: none;">Main Stream</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.4.1/dist/ionicons.js"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- 프로필 -->
+    <div id="profile">
+      <!-- 프로필 이미지 컨테이너 -->
+      <div id="profile_img">
+        <div id="box">
+          <img src="image/profile.jpg" alt="">
+        </div>
+      </div>
+      <div id="text">DLWLRMA</div>
+      <div id="sns">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitch"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+      <div id="follow">
+        <div class="box">
+          <div class="img">
+            <img src="image/profile2.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Kim Seokjin</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile3.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Choi Yoojung</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile4.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Park Min</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile5.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Lee Jehoon</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile6.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Seo Kangjun</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile7.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Kim Taehyung</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/profile8.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>Gong Jicheol</p>
+          </div>
+        </div>
+      </div>
+      <div id="Addbox">
+        <div id="Additional">
+          <div id="left">
+            <div id="img">
+              <img src="image/lostark.jpg" alt="">
+            </div>
+            <span>LOSTARK</span>
+          </div>
+          <div id="right">
+            <ion-icon class="game_icons" name="mic"></ion-icon>
+            <ion-icon class="game_icons" name="headset"></ion-icon>
+            <ion-icon class="game_icons" name="settings"></ion-icon>
+          </div>
+          <script>
+            let icons = document.querySelectorAll('.game_icons');
+            for (const icon of icons) {
+              icon.addEventListener('click',function () {
+                this.classList.toggle("on");
+              })
+            }
+          </script>
+        </div>
+        <div id="AddShadow"></div>
+      </div>
+    </div>
+
+    <!-- 메인 컨테이너 -->
+    <div id="mainContainer">
+      <!-- 메인 타이틀 -->
+      <div id="title">
+        <span>Main Stream</span>
+        <div id="search">
+          <ion-icon id="search_icon" name="search"></ion-icon>
+          <input id="search_input" type="text">
+        </div>
+        <script>
+          let search_icon = document.querySelector('#search_icon');
+          let search_input = document.getElementById("search_input");
+          search_icon.addEventListener('click', function(){
+            this.classList.toggle("click_search");
+            if(this.classList[1]=="click_search"){
+              search_input.style.width="200px";
+            } else {
+              search_input.style.width="0px";
+            }
+          })
+        </script>
+      </div>
+      <!-- 메인 카드 -->
+      <div id="card">
+        <div class="content">
+          <div class="img">
+            <img src="image/lol.jpg" alt="">
+          </div>
+          <div class="text">
+            <p class="title">LEAGUE OF LEGENDS</p>
+            <p class="company">Riots Games</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img src="image/loa.jpg" alt="">
+          </div>
+          <div class="text" style="background-color: #e75c63;">
+            <p class="title">LOSTARK</p>
+            <p class="company">Smilegates</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img src="image/overwatch.jpg" alt="">
+          </div>
+          <div class="text" style="background-color: #ffb12b;">
+            <p class="title">Overwatch</p>
+            <p class="company">Blizzard</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img src="image/battleground.png" alt="">
+          </div>
+          <div class="text" style="background-color: #171717;">
+            <p class="title">BATTLE<br>GROUND</p>
+            <p class="company">KRAFTON</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img">
+            <img src="image/bloodborn.jpg" alt="">
+          </div>
+          <div class="text" style="background-color: #323232;">
+            <p class="title">BLOOD<br>BORN</p>
+            <p class="company">From Software</p>
+          </div>
+        </div>
+      </div>
+      <!--뉴스 -->
+      <div id="news">
+        <div class="content">
+          <div id="img">
+            <div id="imgbox">
+              <img src="image/ori.JPG" alt="">
+            </div>
+          </div>
+          <div id="text">
+            <p id="title">Ori and the Will of the Wisps</p>
+            <p id="watch" onclick="window.open('https://www.youtube.com/watch?v=2reK8k8nwBc')">watch</p>
+            <p id="sub">The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm’s way, it will take more than bravery to bring a family back together, heal a broken land, and discover Ori’s true destiny.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- IONICONS -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
